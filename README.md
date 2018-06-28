@@ -12,7 +12,7 @@ vue-cli での webpack テンプレートをベースにした ビルドなど�
 
 # ダウンロード & ローカル実行
 
-```
+``` bash
 vue init webpack a-frame-template
 git clone https://github.com/tf-webvr-dev/a-frame-template.git vr-sample
 cd vr-sample
@@ -21,7 +21,7 @@ npm run dev
 ```
 
 # firebase にdeploy
-```
+``` bash
 cd vr-sample
 npm run build
 firebase init 
@@ -45,8 +45,20 @@ code .
 開発者モードに変更して USB で PCにつなぎ adb で URLを送る  
 参考 [Oculus Goにadb経由でapkをインストールするまでメモ](http://htkb.hateblo.jp/entry/2018/05/10/212623)
 
-```
+``` bash
 adb shell am start https://tf-webvr-dev.firebaseapp.com
+```
+
+# リモートデバッグ
+OculusGo を 開発者モードにして adb 接続できる状態で PC 側の Chrome を使ってデバッグできる  
+参考 [Android 端末のリモート デバッグを行う](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/?hl=ja)
+
+```
+- OculusGo と 開発マシンを usb で繋ぐ。
+- 開発マシンで Chrome を開きます。
+- DevTools を開きます。
+  DevTools で、[Main Menu] Main Menu をクリックして、
+  [More tools] > [Remote devices] を選択します。
 ```
 
 -----
