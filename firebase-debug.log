@@ -1,0 +1,35 @@
+[debug] [2018-06-28T04:00:30.372Z] ----------------------------------------------------------------------
+[debug] [2018-06-28T04:00:30.374Z] Command:       /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2018-06-28T04:00:30.375Z] CLI Version:   3.19.0
+[debug] [2018-06-28T04:00:30.375Z] Platform:      darwin
+[debug] [2018-06-28T04:00:30.375Z] Node Version:  v10.5.0
+[debug] [2018-06-28T04:00:30.376Z] Time:          Thu Jun 28 2018 13:00:30 GMT+0900 (日本標準時)
+[debug] [2018-06-28T04:00:30.376Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-28T04:00:30.391Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-28T04:00:30.391Z] > authorizing via signed-in user
+[debug] [2018-06-28T04:00:30.394Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tf-webvr-dev  
+  
+ Thu Jun 28 2018 13:00:30 GMT+0900 (日本標準時)
+[debug] [2018-06-28T04:00:32.625Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-28T04:00:32.627Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tf-webvr-dev/tokens  
+  
+ Thu Jun 28 2018 13:00:32 GMT+0900 (日本標準時)
+[debug] [2018-06-28T04:00:34.243Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tf-webvr-dev'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-06-28T04:00:36.927Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tf-webvr-dev/uploads/-LG3YBzx1ArWjZi7tZA2?fileCount=11&message=  
+  
+ Thu Jun 28 2018 13:00:36 GMT+0900 (日本標準時)
+[debug] [2018-06-28T04:06:35.248Z] Error: socket hang up
+    at createHangUpError (_http_client.js:313:15)
+    at TLSSocket.socketOnEnd (_http_client.js:416:23)
+    at TLSSocket.emit (events.js:187:15)
+    at TLSSocket.EventEmitter.emit (domain.js:442:20)
+    at endReadableNT (_stream_readable.js:1081:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Server Error. socket hang up
