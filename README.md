@@ -17,10 +17,12 @@ vue init webpack a-frame-template
 git clone https://github.com/tf-webvr-dev/a-frame-template.git vr-sample
 cd vr-sample
 npm install
+export HOST=0.0.0.0
 npm run dev
 ```
 
 # firebase にdeploy
+
 ``` bash
 cd vr-sample
 npm run build
@@ -46,6 +48,7 @@ code .
 参考 [Oculus Goにadb経由でapkをインストールするまでメモ](http://htkb.hateblo.jp/entry/2018/05/10/212623)
 
 ``` bash
+adb shell am start http://192.168.10.3:8080/
 adb shell am start https://tf-webvr-dev.firebaseapp.com
 ```
 

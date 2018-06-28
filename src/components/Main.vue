@@ -6,6 +6,8 @@
             <!-- Images. -->
             <img id="city" src="static/image/city.jpg">
         </a-assets>
+        
+        <a-sky id="image-360" radius="10" src="#city"></a-sky>
 
         <a-box id="box"
             position="-1 0.5 -3"
@@ -13,8 +15,6 @@
             color="#4CC3D9"
             @click.native="clickBox()">
         </a-box>
-
-        <a-sky id="image-360" radius="10" src="#city"></a-sky>
 
         <a-entity 
             laser-controls="hand:right"
