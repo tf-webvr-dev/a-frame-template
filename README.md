@@ -41,6 +41,14 @@ cd vr-sample
 code .
 ```
 
+# OculusGo に URLを送る 
+開発者モードに変更して USB で PCにつなぎ adb で URLを送る  
+参考 [Oculus Goにadb経由でapkをインストールするまでメモ](http://htkb.hateblo.jp/entry/2018/05/10/212623)
+
+```
+adb shell am start https://tf-webvr-dev.firebaseapp.com
+```
+
 -----
 以下はメモ
 ## Build Setup

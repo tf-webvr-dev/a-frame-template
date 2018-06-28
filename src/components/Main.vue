@@ -11,7 +11,7 @@
       
         <!-- Camera + Cursor. -->
         <a-camera gamepad-controls 
-            sound="src: static/click.wav; on: gamepadbuttondown:0">
+            sound="src: #click-sound; on: gamepadbuttondown:0">
             <a-cursor id="cursor">
                 <a-animation
                     begin="click"
@@ -32,6 +32,20 @@
                 </a-animation>
             </a-cursor>
         </a-camera>
+
+        <a-box id="box"
+            position="-1 0.5 -3"
+            rotation="0 45 0"
+            color="#4CC3D9"
+            @click.native="clickBox()">
+        </a-box>
+
+        <a-sky color="#ECECEC"></a-sky>
+
+        <a-entity laser-controls="hand:right"
+            oculus-go-controls="hand:right; armModel:false">
+        </a-entity>
+
     </a-scene>    
 </template>
 
@@ -41,6 +55,12 @@ export default {
   data () {
     return {
     }
+  },
+  methods: {
+      clickBox(ev){
+        ev.target.setAttribute('color', '#0F0')
+        console.log("clickBox")
+      }
   }
 }
 </script>
