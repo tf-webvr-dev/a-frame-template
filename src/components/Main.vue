@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: 'GamePad',
+  name: 'Main',
   data () {
     return {
     }
