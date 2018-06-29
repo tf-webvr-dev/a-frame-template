@@ -7,8 +7,8 @@ import Aframe from 'aframe'
 import GamepadControls from 'aframe-gamepad-controls'
 Aframe.registerComponent('gamepad-controls', GamepadControls)
 
+/*
 import firebase from 'firebase'
-
 const config = {
   apiKey: "AIzaSyA4Q2A9UOlgfQOfVoqhgzUtEJKSc1T_RxY",
   authDomain: "tf-webvr-dev.firebaseapp.com",
@@ -18,6 +18,7 @@ const config = {
   messagingSenderId: "192817435892"
 }
 firebase.initializeApp(config);
+*/
 
 Vue.config.productionTip = false
 
